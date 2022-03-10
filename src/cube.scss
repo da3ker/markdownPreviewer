@@ -1,0 +1,112 @@
+$cube-color: rgb(220, 38, 38);
+$cube-shadow-distance: -3.563rem;
+$cube-shadow-blur: 1.875rem;
+$cube-width: 2.813rem;
+$cube-height: 2.813rem;
+$cube-spacing: 1.406rem;
+$cube-icon-spacing: 0.469rem;
+$cube-icon-shadow: 1.875rem;
+$cube-icon-color: rgb(254, 202, 202);
+
+/* Rotating cube infos */
+
+.cube {
+  position: fixed;
+  width: $cube-width;
+  height: $cube-height;
+  transform-style: preserve-3d;
+  transform: rotateX(-30deg);
+  animation: animate 4s linear infinite;
+  bottom: 0;
+  right: 0;
+  margin: 20px;
+}
+
+@keyframes animate {
+  0% {
+    transform: rotateX(-30deg) rotateY(0deg);
+  }
+  100% {
+    transform: rotateX(-30deg) rotateY(360deg);
+  }
+}
+
+.cube div {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: $cube-width;
+  height: $cube-height;
+  transform-style: preserve-3d;
+}
+
+.cube div span {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: $cube-width;
+  height: $cube-height;
+  background: linear-gradient(#252324, $cube-color);
+  transform: rotateY(calc(90deg * var(--i))) translateZ($cube-spacing);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transform-style: preserve-3d;
+  border: 0.5px solid rgb(254, 226, 226);
+  border-radius: 2px;
+}
+
+.cube div span a {
+  position: absolute;
+  font-size: 1.5em;
+  color: $cube-icon-color;
+  transform: translateZ($cube-icon-spacing);
+}
+
+.cube div span a:nth-child(1) {
+  transform: translateZ(0) translateY($cube-icon-shadow);
+  color: rgba(0, 0, 0, 0.2);
+  filter: blur(2px);
+}
+
+.top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: $cube-width;
+  height: $cube-height;
+  background: #252324;
+  transform: rotateX(90deg) translateZ($cube-spacing);
+  border-radius: 2px;
+}
+
+.top::before {
+  content: "";
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: $cube-width;
+  height: $cube-height;
+  background: $cube-color;
+  transform: translateZ($cube-shadow-distance);
+  filter: blur($cube-shadow-blur);
+  box-shadow: 0 0 12px rgba(255, 250, 143, 0.2);
+}
+
+.cube::before {
+  content: "sera";
+  position: absolute;
+  bottom: 60px;
+  left: 10px;
+  color: rgb(153, 27, 27);
+}
+
+.cube div span a:nth-child(2):hover {
+  color: rgb(254, 242, 242);
+}
+
+@media only screen and (max-width: 700px) {
+  .cube {
+    display: none;
+  }
+}

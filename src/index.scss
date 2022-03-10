@@ -1,0 +1,94 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+::-webkit-scrollbar {
+  width: 7px;
+  cursor: pointer;
+}
+::-webkit-scrollbar-track {
+  background-color: rgb(239, 68, 68);
+}
+::-webkit-scrollbar-thumb {
+  background-color: rgb(220, 38, 38);
+}
+#minimap::-webkit-scrollbar {
+  width: 0;
+}
+
+#preview {
+  blockquote {
+    border-left: 3px solid rgb(127, 29, 29);
+    color: rgb(220, 38, 38);
+    padding-left: 5px;
+    margin-left: 25px;
+  }
+  code {
+    font-weight: bold;
+    font-size: 0.875rem;
+    color: rgb(220, 38, 38);
+  }
+  pre {
+    display: block;
+    overflow: auto;
+    background: rgba(254, 202, 202, 0.5);
+    padding: 5px;
+    line-height: 1.2;
+  }
+  h1 {
+    border-bottom: 2px solid #000;
+    font-size: 2em;
+    font-weight: bold;
+  }
+  h2 {
+    border-bottom: 1px solid #000;
+    font-size: 1.5em;
+    font-weight: bold;
+  }
+  h3 {
+    font-size: 1.17em;
+    font-weight: bold;
+  }
+  h4 {
+    font-weight: bold;
+  }
+  h5 {
+    font-size: 0.83em;
+    font-weight: bold;
+  }
+  h6 {
+    font-size: 0.67em;
+    font-weight: bold;
+  }
+  table {
+    border-collapse: collapse;
+  }
+
+  td,
+  th {
+    border: 2px solid #000;
+    padding-left: 5px;
+    padding-right: 5px;
+  }
+  img {
+    display: block;
+    width: 10vw;
+  }
+  a {
+    color: rgb(236, 72, 153);
+    cursor: pointer;
+    text-decoration: underline;
+    &:hover {
+      color: rgb(249, 168, 212);
+    }
+  }
+  ul {
+    display: block;
+    list-style-type: disc;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    padding-inline-start: 40px;
+  }
+}

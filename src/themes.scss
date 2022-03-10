@@ -1,0 +1,435 @@
+//Tangerine
+
+.App.orange {
+  background: rgb(254, 215, 170); //200
+  color: rgb(124, 45, 18); //900
+  #container {
+    background: rgb(249, 115, 22); //500
+    #title-header {
+      background: rgb(255, 237, 213); //100
+    }
+    #header code {
+      background: rgb(251, 146, 60); //400
+    }
+    #body {
+      div {
+        #editor {
+          background: rgb(251, 146, 60); //400
+        }
+        #minimap {
+          background: rgb(253, 186, 116); //300
+        }
+      }
+      #preview {
+        background: rgb(251, 146, 60); //400
+        blockquote {
+          border-left: 3px solid rgb(124, 45, 18); //900
+          color: rgb(234, 88, 12); //600
+        }
+        code {
+          color: rgb(234, 88, 12); //600
+        }
+        pre {
+          background: rgba(254, 215, 170, 0.5); //200
+        }
+        a {
+          color: rgb(234, 179, 8); //500 other color
+          &:hover {
+            color: rgb(253, 224, 71); //300 other color
+          }
+        }
+      }
+    }
+    #footer {
+      background: rgb(249, 115, 22); //500
+    }
+  }
+  ::-webkit-scrollbar-track {
+    background-color: rgb(249, 115, 22); //500
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(234, 88, 12); //600
+  }
+
+  //Cube theme
+  .cube div span {
+    background: linear-gradient(#252324, rgb(234, 88, 12)); //600
+    border: 0.5px solid rgb(255, 237, 213); //100
+    a {
+      color: rgb(254, 215, 170); //200
+      &:nth-child(2):hover {
+        color: rgb(255, 247, 237); //50
+      }
+    }
+  }
+  .top::before {
+    background: rgb(234, 88, 12); //600
+  }
+  .cube::before {
+    color: rgb(154, 52, 18); //800
+  }
+}
+
+//Amber
+
+.App.amber {
+  background: rgb(253, 230, 138); //200
+  color: rgb(120, 53, 15); //900
+  #container {
+    background: rgb(245, 158, 11); //500
+    #title-header {
+      background: rgb(254, 243, 199); //100
+    }
+    #header code {
+      background: rgb(251, 191, 36); //400
+    }
+    #body {
+      div {
+        #editor {
+          background: rgb(251, 191, 36); //400
+        }
+        #minimap {
+          background: rgb(252, 211, 77); //300
+        }
+      }
+      #preview {
+        background: rgb(251, 191, 36); //400
+        blockquote {
+          border-left: 3px solid rgb(120, 53, 15); //900
+          color: rgb(217, 119, 6); //600
+        }
+        code {
+          color: rgb(217, 119, 6); //600
+        }
+        pre {
+          background: rgba(253, 230, 138, 0.5); //200
+        }
+        a {
+          color: rgb(249, 115, 22); //500 other color
+          &:hover {
+            color: rgb(253, 186, 116); //300 other color
+          }
+        }
+      }
+    }
+    #footer {
+      background: rgb(245, 158, 11); //500
+    }
+  }
+  ::-webkit-scrollbar-track {
+    background-color: rgb(245, 158, 11); //500
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(217, 119, 6); //600
+  }
+
+  //Cube theme
+  .cube div span {
+    background: linear-gradient(#252324, rgb(217, 119, 6)); //600
+    border: 0.5px solid rgb(254, 243, 199); //100
+    a {
+      color: rgb(253, 230, 138); //200
+      &:nth-child(2):hover {
+        color: rgb(255, 251, 235); //50
+      }
+    }
+  }
+  .top::before {
+    background: rgb(217, 119, 6); //600
+  }
+  .cube::before {
+    color: rgb(146, 64, 14); //800
+  }
+}
+
+//Forest
+
+.App.green {
+  background: rgb(187, 247, 208); //200
+  color: rgb(20, 83, 45); //900
+  #container {
+    background: rgb(34, 197, 94); //500
+    #title-header {
+      background: rgb(220, 252, 231); //100
+    }
+    #header code {
+      background: rgb(74, 222, 128); //400
+    }
+    #body {
+      div {
+        #editor {
+          background: rgb(74, 222, 128); //400
+        }
+        #minimap {
+          background: rgb(134, 239, 172); //300
+        }
+      }
+      #preview {
+        background: rgb(74, 222, 128); //400
+        blockquote {
+          border-left: 3px solid rgb(20, 83, 45); //900
+          color: rgb(22, 163, 74); //600
+        }
+        code {
+          color: rgb(22, 163, 74); //600
+        }
+        pre {
+          background: rgba(187, 247, 208, 0.5); //200
+        }
+        a {
+          color: rgb(16, 185, 129); //500 other color
+          &:hover {
+            color: rgb(110, 231, 183); //300 other color
+          }
+        }
+      }
+    }
+    #footer {
+      background: rgb(34, 197, 94); //500
+    }
+  }
+  ::-webkit-scrollbar-track {
+    background-color: rgb(34, 197, 94); //500
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(22, 163, 74); //600
+  }
+
+  //Cube theme
+  .cube div span {
+    background: linear-gradient(#252324, rgb(22, 163, 74)); //600
+    border: 0.5px solid rgb(220, 252, 231); //100
+    a {
+      color: rgb(187, 247, 208); //200
+      &:nth-child(2):hover {
+        color: rgb(240, 253, 244); //50
+      }
+    }
+  }
+  .top::before {
+    background: rgb(22, 163, 74); //600
+  }
+  .cube::before {
+    color: rgb(22, 101, 52); //800
+  }
+}
+
+//Sky
+
+.App.sky {
+  background: rgb(186, 230, 253); //200
+  color: rgb(12, 74, 110); //900
+  #container {
+    background: rgb(14, 165, 233); //500
+    #title-header {
+      background: rgb(224, 242, 254); //100
+    }
+    #header code {
+      background: rgb(56, 189, 248); //400
+    }
+    #body {
+      div {
+        #editor {
+          background: rgb(56, 189, 248); //400
+        }
+        #minimap {
+          background: rgb(125, 211, 252); //300
+        }
+      }
+      #preview {
+        background: rgb(56, 189, 248); //400
+        blockquote {
+          border-left: 3px solid rgb(12, 74, 110); //900
+          color: rgb(2, 132, 199); //600
+        }
+        code {
+          color: rgb(2, 132, 199); //600
+        }
+        pre {
+          background: rgba(186, 230, 253, 0.5); //200
+        }
+        a {
+          color: rgb(99, 102, 241); //500 other color
+          &:hover {
+            color: rgb(165, 180, 252); //300 other color
+          }
+        }
+      }
+    }
+    #footer {
+      background: rgb(14, 165, 233); //500
+    }
+  }
+  ::-webkit-scrollbar-track {
+    background-color: rgb(14, 165, 233); //500
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(2, 132, 199); //600
+  }
+
+  //Cube theme
+  .cube div span {
+    background: linear-gradient(#252324, rgb(2, 132, 199)); //600
+    border: 0.5px solid rgb(224, 242, 254); //100
+    a {
+      color: rgb(186, 230, 253); //200
+      &:nth-child(2):hover {
+        color: rgb(240, 249, 255); //50
+      }
+    }
+  }
+  .top::before {
+    background: rgb(2, 132, 199); //600
+  }
+  .cube::before {
+    color: rgb(7, 89, 133); //800
+  }
+}
+
+//Fuchsia
+
+.App.fuchsia {
+  background: rgb(245, 208, 254); //200
+  color: rgb(112, 26, 117); //900
+  #container {
+    background: rgb(217, 70, 239); //500
+    #title-header {
+      background: rgb(250, 232, 255); //100
+    }
+    #header code {
+      background: rgb(232, 121, 249); //400
+    }
+    #body {
+      div {
+        #editor {
+          background: rgb(232, 121, 249); //400
+        }
+        #minimap {
+          background: rgb(240, 171, 252); //300
+        }
+      }
+      #preview {
+        background: rgb(232, 121, 249); //400
+        blockquote {
+          border-left: 3px solid rgb(112, 26, 117); //900
+          color: rgb(192, 38, 211); //600
+        }
+        code {
+          color: rgb(192, 38, 211); //600
+        }
+        pre {
+          background: rgba(245, 208, 254, 0.5); //200
+        }
+        a {
+          color: rgb(236, 72, 153); //500 other color
+          &:hover {
+            color: rgb(249, 168, 212); //300 other color
+          }
+        }
+      }
+    }
+    #footer {
+      background: rgb(217, 70, 239); //500
+    }
+  }
+  ::-webkit-scrollbar-track {
+    background-color: rgb(217, 70, 239); //500
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(192, 38, 211); //600
+  }
+
+  //Cube theme
+  .cube div span {
+    background: linear-gradient(#252324, rgb(192, 38, 211)); //600
+    border: 0.5px solid rgb(250, 232, 255); //100
+    a {
+      color: rgb(245, 208, 254); //200
+      &:nth-child(2):hover {
+        color: rgb(253, 244, 255); //50
+      }
+    }
+  }
+  .top::before {
+    background: rgb(192, 38, 211); //600
+  }
+  .cube::before {
+    color: rgb(134, 25, 143); //800
+  }
+}
+
+//Playful
+
+.App.playful {
+  background: rgb(254, 252, 232);
+  color: rgb(113, 63, 18);
+  #container {
+    background: rgb(244, 63, 94);
+    #title-header {
+      background: rgb(253, 230, 138);
+    }
+    #header code {
+      background: rgb(96, 165, 250);
+      &:last-child {
+        background: rgb(56, 189, 248);
+      }
+    }
+    #body {
+      div {
+        #editor {
+          background: rgb(96, 165, 250);
+        }
+        #minimap {
+          background: rgb(244, 63, 94);
+        }
+      }
+      #preview {
+        background: rgb(56, 189, 248);
+        blockquote {
+          border-left: 3px solid rgb(6, 95, 70);
+          color: rgb(16, 185, 129);
+        }
+        code {
+          color: rgb(34, 197, 94);
+        }
+        pre {
+          background: rgba(190, 242, 100, 0.3);
+          border-radius: 5px;
+        }
+        a {
+          color: rgb(254, 240, 138);
+          &:hover {
+            color: rgb(253, 164, 175);
+          }
+        }
+      }
+    }
+    #footer {
+      background: rgb(244, 63, 94);
+    }
+  }
+  ::-webkit-scrollbar-track {
+    background-color: rgb(244, 63, 94);
+  }
+  ::-webkit-scrollbar-thumb {
+    background-color: rgb(253, 230, 138);
+  }
+
+  //Cube theme
+  .cube div span {
+    background: linear-gradient(#252324, rgb(244, 63, 94));
+    border: 0.5px solid rgb(253, 230, 138);
+    a {
+      color: rgb(134, 239, 172);
+      &:nth-child(2):hover {
+        color: rgb(234, 179, 8);
+      }
+    }
+  }
+  .top::before {
+    background: rgb(244, 63, 94);
+  }
+  .cube::before {
+    color: rgb(59, 130, 246);
+  }
+}
